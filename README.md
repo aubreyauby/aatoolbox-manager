@@ -3,4 +3,18 @@ aaToolbox Manager is a program I made to host all downloads and resources for my
 
 This project was fully developed with Win32 as a start, with plans to potentially rewrite in Qt once I figure out how the whole shenanigans work and feel more confident in using it for future C++ projects. This was completely written in VSCode.
 
-## No images just yet, but soon!
+## Test it out yourself!
+This project uses CMake to build the entire project into an executable file. There are future plans to make this cross-platform, but for now it is Windows exclusive.
+
+### 1. Create a `build` folder within the root directory.
+In PowerShell, use this CMake command. You might need to [install](https://cmake.org/download/) CMake first if PowerShell doesn't recognize it:
+
+```cmake -S . -B build```
+
+### 2. Build the project inside the `build` folder you just made.
+Have CMake build the entire project using this command:
+
+```cmake --build build```
+
+### 3. Run the app.
+Head to the `build` folder, then go to `Debug`, and you'll find the executable `aaToolboxManager.exe` file.
